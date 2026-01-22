@@ -1,0 +1,26 @@
+{
+  "name": "gympower-pro",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "server": "json-server --watch src/data/db.json --port 5000",
+    "start": "concurrently \"npm run dev\" \"npm run server\""
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0",
+    "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "concurrently": "^8.0.1",
+    "json-server": "^0.17.3",
+    "vite": "^4.2.0"
+  }
+}
